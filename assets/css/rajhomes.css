@@ -1,0 +1,26 @@
+.navbar img{
+    height:50px;
+}
+.image{
+    width: 1413px;
+    object-fit: cover;
+}
+
+.navbar-pad{
+    padding: 19px;
+}
+
+.img{
+   width:50vw;
+    object-fit: cover;
+}
+
+.con{
+    text-align: center;
+}
+
+.img2{ 
+    width:40vw;
+    object-fit: cover;
+
+}
