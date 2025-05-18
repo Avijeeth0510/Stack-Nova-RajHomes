@@ -380,9 +380,10 @@
 }
 
 .plan{
-    background-image: url('../images/map_perfect.jpg');
-    width:100%;
-    height:100hw;
+    padding-bottom: 30px;
+   background-image: url('../images/background7th.jpg');
+   width:100%;
+   height:60vh;
 }
 
 
@@ -390,8 +391,8 @@
 
    padding-bottom: 30px;
    background-image: url('../images/perfect_plain.jpg');
-   width:80vw;
-   height:60vh;
+   width:100%;
+   height:90vh;
   
 }
 
@@ -416,3 +417,123 @@
 }
 
 
+
+/* === Vertical Fullscreen Slider Styles === */
+.travelio-vertical-slider {
+  height: 100vh;
+  width: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+  padding: 0;
+}
+
+.travelio-slide {
+  scroll-snap-align: start;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.travelio-slide-content {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.travelio-slide-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.travelio-slide-content p {
+  font-size: 1.2rem;
+}
+
+/* Hide scrollbar (optional) */
+.travelio-vertical-slider::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+
+
+
+
+.travelio-package-slider {
+  padding: 2rem 0;
+  background-color: #fff;
+}
+.travelio-package-slider h2,
+.travelio-package-slider h5 {
+  margin-bottom: 1rem;
+}
+
+.travelio-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  max-height: 600px;
+  margin: auto;
+}
+.travelio-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.travelio-card-body {
+  padding: 1rem;
+}
+.travelio-badge {
+  background-color: #c19052;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  float: right;
+  margin-bottom: 10px;
+}
+.travelio-card-body h4 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+.strike {
+  text-decoration: line-through;
+  color: #b33;
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+.stars {
+  color: orange;
+  font-size: 1rem;
+}
+.swiper {
+  width: 100%;
+  padding: 2rem 0;
+  padding: 0 20px;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.travelio-package-slider {
+  padding: 0 40px;
+}
+
+
+
+.firstplace{
+
+}
