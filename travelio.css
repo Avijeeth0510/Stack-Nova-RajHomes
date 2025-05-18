@@ -1,0 +1,418 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+  }
+  
+  /* Basic content styling for demo */
+  .content {
+    max-width: 1200px;
+    margin: 100px auto 0;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .content h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 70px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  /* Logo Styles */
+  .logo a {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .logo a:hover {
+    color: #3498db;
+  }
+  
+  /* Navigation Menu Styles */
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-left: 2rem;
+  }
+  
+  .nav-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .nav-links a:hover {
+    color: #3498db;
+  }
+  
+  /* Active link indicator */
+  .nav-links a.active {
+    color: #3498db;
+  }
+  
+  .nav-links a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #3498db;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: all 0.3s ease;
+  }
+  
+  /* Mobile Responsive Styles */
+  @media only screen and (max-width: 768px) {
+    /* Show hamburger menu on mobile */
+    .hamburger {
+      display: block;
+    }
+  
+    /* Animate hamburger to X when menu is active */
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    /* Position the nav menu for mobile */
+    .nav-menu {
+      position: fixed;
+      top: 70px; /* Height of the navbar */
+      left: -100%;
+      width: 100%;
+      background-color: #2c3e50;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      
+    }
+  
+    /* Show nav menu when active class is added */
+    .nav-menu.active {
+      left: 0;
+    }
+  
+    /* Stack nav links vertically */
+    .nav-links {
+      flex-direction: column;
+      padding: 20px 0;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  }
+
+  .logo{
+    width:30%;
+    padding-left: 30px;
+  }
+  
+  
+.accordion {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    margin: 0px auto;
+  }
+  
+  .accordion ul {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .accordion ul li {
+    display: table-cell;
+    vertical-align: bottom;
+    position: relative;
+    width: 16.666%;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 1000ms ease-in-out;
+  }
+  
+  .accordion ul li div {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .accordion ul li div a {
+    display: block;
+    height: 350px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    vertical-align: bottom;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+    /*filter: invert(100%);*/
+    text-decoration: none;
+    font-family: Open Sans, sans-serif;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .accordion ul li div a * {
+    opacity: 1;
+    
+    margin: 0 0 0 10px;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    white-space: nowrap;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+    -webkit-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+  }
+  .accordion ul li div a h2 {
+    font-family: Montserrat, sans-serif;
+    text-overflow: clip;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    top: 240px;
+  }
+  .accordion ul li div .title {
+    font-family: Montserrat, sans-serif;
+    text-overflow: clip;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    top: 210px;
+    color:#ffffff;text-shadow: 1px 1px 2px #000;
+    left:5%;
+    position:absolute;
+    opacity:1;
+  }
+  .accordion ul li div a p {
+    top: 240px;
+    font-size: 18px;
+    padding-left: 0;
+  }
+  
+  .accordion ul li:nth-child(1) { 
+    background-image: url("http://res.cloudinary.com/simpleview/image/upload/v1473537250/clients/scottsdale/Waterfront_Canal_overhead_shot_night_1__7abd0528-2310-45cb-8ade-ef538cc53251.jpg"); 
+    background-position: 50% 30%;
+  }
+  
+  .accordion ul li:nth-child(2) { 
+    background-image: url("http://res.cloudinary.com/simpleview/image/upload/v1528125519/clients/scottsdale/Halie_Sutton_Scottsdale_Undertow_9481_f9f68275-db93-4d1a-9163-13ea1c3bad67.jpg"); 
+   background-position: 70% 0%;
+  }
+  
+  .accordion ul li:nth-child(3) { 
+    background-image: url("http://res.cloudinary.com/simpleview/image/upload/v1524516076/clients/scottsdale/Riding_near_Granite_Mountain_76f3d366-4dc0-487c-bd71-cae1615633a2.jpg"); 
+  background-position: 50% 50%;
+  }
+  
+  .accordion ul li:nth-child(4) { 
+    background-image: url("http://res.cloudinary.com/simpleview/image/upload/v1524866182/clients/scottsdale/087_3_2249_jpeg_4efee80a-c4c4-4672-b81f-072e7714082f.jpg"); 
+    background-position: 30% 40%;
+  }
+  
+  .accordion ul li:nth-child(5) { 
+    background-image: url("http://res.cloudinary.com/simpleview/image/upload/v1525217553/clients/scottsdale/Kierland_Golf_Club_5d0e148d-69ef-4943-8540-6ebe0a4cd216.jpg"); 
+    background-position: 60% 64%;
+  }
+  
+  .accordion ul li:nth-child(6) { 
+    background-image: url("http://res.cloudinary.com/simpleview/image/upload/v1525446371/clients/scottsdale/Talking_Stick_Sunset1_Cordwell_f5ba762b-f42a-4bf7-bf7d-bad5a841bf07.jpg"); 
+    background-position: 70% 25%;
+  }
+  .accordion ul li:nth-child(7) { 
+    background-image: url("http://res.cloudinary.com/simpleview/image/upload/v1523399533/clients/scottsdale/AFAR_SCOTTSDALE_CORDWELL_062017_17_66a9fb48-f82f-4f1d-9403-2762f78e5f1b.jpg"); 
+    background-position: 50% 30%;
+  }
+  
+  .accordion ul li:nth-child(8) { 
+    background-image: url("http://res.cloudinary.com/simpleview/image/upload/v1512147648/clients/scottsdale/TSR_Spa_5ad5c4b7-2134-40d7-b8cf-ca5ba83c67d9.jpg"); 
+    background-position: 50% 30%;
+  }
+  .accordion ul li { background-size: cover; }
+  .accordion ul:hover li { width: 10%; }
+  .accordion ul:hover li:hover { width: 90%; }
+  
+  /*.accordion ul:hover li:hover a { background: rgba(0, 0, 0, 0.4); }*/
+  
+  .accordion ul:hover li:hover a * {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  .accordion ul:hover li:hover .title * {
+    opacity: 0;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  
+   @media screen and (max-width: 680px) {
+    
+    body { margin: 0; }
+    .accordion { height: auto; }
+  
+    .accordion ul li,
+    .accordion ul li:hover,
+    .accordion ul:hover li,
+    .accordion ul:hover li:hover {
+      position: relative;
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+      -webkit-transition: none;
+      transition: none;
+    }
+    .accordion ul li div a * {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  
+.menu{
+    padding-right: 380px;
+}
+
+.destination_image{
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+.box{
+    padding-bottom: 30px;
+}
+
+.perfect_plan{
+    width:100%;
+    height: 80%;
+}
+
+.story{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.firstbox{
+  
+    background-color:rgb(34, 30, 30);
+    color:white;
+    border-top-right-radius:10px;
+    border-top-left-radius: 10px;
+    padding: 15px;
+    
+    
+}
+
+.secondbox{
+    background-color:white;
+    color:black;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+    padding:15px;
+    width:100%;
+    margin-left:10px ;
+    margin-right:10px ;
+}
+.box1{
+    top:73%;
+    margin-left:10px ;
+    margin-right:30px ;
+  
+}
+
+.plan{
+    background-image: url('../images/map_perfect.jpg');
+    width:100%;
+    height:100hw;
+}
+
+
+.box2{
+
+   padding-bottom: 30px;
+   background-image: url('../images/perfect_plain.jpg');
+   width:80vw;
+   height:60vh;
+  
+}
+
+.man{
+    width:100%;
+    height:70%;
+    margin-left: 35%;
+}
+
+.back{
+    background-image: url('../images/background.png');
+    width:100%;
+    height:100%;
+}
+
+.text{
+    font-weight: 600;
+    letter-spacing: -3 !important;
+    color: var(--medium-gray);
+    line-height: 32px;
+    font-size: 17px;
+}
+
+
