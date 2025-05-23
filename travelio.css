@@ -23,7 +23,53 @@
     color: #333;
   }
   
-  /* Navbar Styles */
+ 
+
+  
+.menu{
+    padding-right: 380px;
+}
+
+.destination_image{
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+
+/*mapsection*/
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+
+.mapsectionpad{
+  padding-left: 2px;
+  padding-bottom: 300px;
+  padding-top: 100px;
+ 
+}
+
+
+.plan{
+    padding-bottom: 30px;
+   background-image: url('../images/background7th.jpg');
+   width:100%;
+   height:60vh;
+   background-size: cover !important;
+}
+
+.font1{
+font-family: "Schibsted Grotesk", sans-serif !important;
+}
+
+
+
+
+/*headerclasses*/
+  .logo{
+    width:30%;
+    padding-left: 30px;
+  }
+
+   /* Navbar Styles */
   .navbar {
     position: fixed;
     top: 0;
@@ -155,270 +201,9 @@
     }
   }
 
-  .logo{
-    width:30%;
-    padding-left: 30px;
-  }
-  
-  
-.accordion {
-    width: 100%;
-    height: 450px;
-    overflow: hidden;
-    margin: 0px auto;
-  }
-  
-  .accordion ul {
-    width: 100%;
-    display: table;
-    table-layout: fixed;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .accordion ul li {
-    display: table-cell;
-    vertical-align: bottom;
-    position: relative;
-    width: 16.666%;
-    height: 450px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    transition: all 1000ms ease-in-out;
-  }
-  
-  .accordion ul li div {
-    display: block;
-    overflow: hidden;
-    width: 100%;
-  }
-  
-  .accordion ul li div a {
-    display: block;
-    height: 350px;
-    width: 100%;
-    position: relative;
-    z-index: 3;
-    vertical-align: bottom;
-    padding: 15px 20px;
-    box-sizing: border-box;
-    color: #fff;
-    text-shadow: 1px 1px 2px #000;
-    /*filter: invert(100%);*/
-    text-decoration: none;
-    font-family: Open Sans, sans-serif;
-    transition: all 300ms ease-in-out;
-  }
-  
-  .accordion ul li div a * {
-    opacity: 1;
-    
-    margin: 0 0 0 10px;
-    width: 100%;
-    position: relative;
-    z-index: 5;
-    white-space: nowrap;
-    -webkit-transform: translateX(-20px);
-    transform: translateX(-20px);
-    -webkit-transition: all 400ms ease-in-out;
-    transition: all 400ms ease-in-out;
-  }
-  .accordion ul li div a h2 {
-    font-family: Montserrat, sans-serif;
-    text-overflow: clip;
-    font-size: 24px;
-    text-transform: uppercase;
-    margin-bottom: 2px;
-    top: 240px;
-  }
-  .accordion ul li div .title {
-    font-family: Montserrat, sans-serif;
-    text-overflow: clip;
-    font-size: 32px;
-    text-transform: uppercase;
-    margin-bottom: 2px;
-    top: 210px;
-    color:#ffffff;text-shadow: 1px 1px 2px #000;
-    left:5%;
-    position:absolute;
-    opacity:1;
-  }
-  .accordion ul li div a p {
-    top: 240px;
-    font-size: 18px;
-    padding-left: 0;
-  }
-  
-  .accordion ul li:nth-child(1) { 
-    background-image: url("http://res.cloudinary.com/simpleview/image/upload/v1473537250/clients/scottsdale/Waterfront_Canal_overhead_shot_night_1__7abd0528-2310-45cb-8ade-ef538cc53251.jpg"); 
-    background-position: 50% 30%;
-  }
-  
-  .accordion ul li:nth-child(2) { 
-    background-image: url("http://res.cloudinary.com/simpleview/image/upload/v1528125519/clients/scottsdale/Halie_Sutton_Scottsdale_Undertow_9481_f9f68275-db93-4d1a-9163-13ea1c3bad67.jpg"); 
-   background-position: 70% 0%;
-  }
-  
-  .accordion ul li:nth-child(3) { 
-    background-image: url("http://res.cloudinary.com/simpleview/image/upload/v1524516076/clients/scottsdale/Riding_near_Granite_Mountain_76f3d366-4dc0-487c-bd71-cae1615633a2.jpg"); 
-  background-position: 50% 50%;
-  }
-  
-  .accordion ul li:nth-child(4) { 
-    background-image: url("http://res.cloudinary.com/simpleview/image/upload/v1524866182/clients/scottsdale/087_3_2249_jpeg_4efee80a-c4c4-4672-b81f-072e7714082f.jpg"); 
-    background-position: 30% 40%;
-  }
-  
-  .accordion ul li:nth-child(5) { 
-    background-image: url("http://res.cloudinary.com/simpleview/image/upload/v1525217553/clients/scottsdale/Kierland_Golf_Club_5d0e148d-69ef-4943-8540-6ebe0a4cd216.jpg"); 
-    background-position: 60% 64%;
-  }
-  
-  .accordion ul li:nth-child(6) { 
-    background-image: url("http://res.cloudinary.com/simpleview/image/upload/v1525446371/clients/scottsdale/Talking_Stick_Sunset1_Cordwell_f5ba762b-f42a-4bf7-bf7d-bad5a841bf07.jpg"); 
-    background-position: 70% 25%;
-  }
-  .accordion ul li:nth-child(7) { 
-    background-image: url("http://res.cloudinary.com/simpleview/image/upload/v1523399533/clients/scottsdale/AFAR_SCOTTSDALE_CORDWELL_062017_17_66a9fb48-f82f-4f1d-9403-2762f78e5f1b.jpg"); 
-    background-position: 50% 30%;
-  }
-  
-  .accordion ul li:nth-child(8) { 
-    background-image: url("http://res.cloudinary.com/simpleview/image/upload/v1512147648/clients/scottsdale/TSR_Spa_5ad5c4b7-2134-40d7-b8cf-ca5ba83c67d9.jpg"); 
-    background-position: 50% 30%;
-  }
-  .accordion ul li { background-size: cover; }
-  .accordion ul:hover li { width: 10%; }
-  .accordion ul:hover li:hover { width: 90%; }
-  
-  /*.accordion ul:hover li:hover a { background: rgba(0, 0, 0, 0.4); }*/
-  
-  .accordion ul:hover li:hover a * {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  .accordion ul:hover li:hover .title * {
-    opacity: 0;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  
-   @media screen and (max-width: 680px) {
-    
-    body { margin: 0; }
-    .accordion { height: auto; }
-  
-    .accordion ul li,
-    .accordion ul li:hover,
-    .accordion ul:hover li,
-    .accordion ul:hover li:hover {
-      position: relative;
-      display: table;
-      table-layout: fixed;
-      width: 100%;
-      -webkit-transition: none;
-      transition: none;
-    }
-    .accordion ul li div a * {
-      opacity: 1;
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-    }
-  }
-  
-.menu{
-    padding-right: 380px;
-}
 
-.destination_image{
-    width: 100%;
-    border-radius: 10px;
-    
-}
-
-.box{
-    padding-bottom: 30px;
-}
-
-.perfect_plan{
-    width:100%;
-    height: 80%;
-}
-
-.story{
-    width: 100%;
-    border-radius: 10px;
-}
-
-.firstbox{
   
-    background-color:rgb(34, 30, 30);
-    color:white;
-    border-top-right-radius:10px;
-    border-top-left-radius: 10px;
-    padding: 15px;
-    
-    
-}
-
-.secondbox{
-    background-color:white;
-    color:black;
-    border-bottom-right-radius:10px;
-    border-bottom-left-radius: 10px;
-    padding:15px;
-    width:100%;
-    margin-left:10px ;
-    margin-right:10px ;
-}
-.box1{
-    top:73%;
-    margin-left:10px ;
-    margin-right:30px ;
-  
-}
-
-.plan{
-    padding-bottom: 30px;
-   background-image: url('../images/background7th.jpg');
-   width:100%;
-   height:60vh;
-}
-
-
-.box2{
-
-   padding-bottom: 30px;
-   background-image: url('../images/perfect_plain.jpg');
-   width:100%;
-   height:90vh;
-  
-}
-
-.man{
-    width:100%;
-    height:70%;
-    margin-left: 35%;
-}
-
-.back{
-    background-image: url('../images/background.png');
-    width:100%;
-    height:100%;
-}
-
-.text{
-    font-weight: 600;
-    letter-spacing: -3 !important;
-    color: var(--medium-gray);
-    line-height: 32px;
-    font-size: 17px;
-}
-
-
-
-/* === Vertical Fullscreen Slider Styles === */
+  /* === Vertical Fullscreen Slider Styles === */
 .travelio-vertical-slider {
   height: 100vh;
   width: 100%;
@@ -458,6 +243,14 @@
   font-size: 1.2rem;
 }
 
+
+.bgcolour{
+  background-color: #f2efeb;
+  padding-bottom: 40px;
+}
+
+
+
 /* Hide scrollbar (optional) */
 .travelio-vertical-slider::-webkit-scrollbar {
   width: 0;
@@ -466,11 +259,11 @@
 
 
 
-
+/*silder2*/
 
 .travelio-package-slider {
   padding: 2rem 0;
-  background-color: #fff;
+  
 }
 .travelio-package-slider h2,
 .travelio-package-slider h5 {
@@ -494,6 +287,7 @@
 .travelio-card-body {
   padding: 1rem;
 }
+
 .travelio-badge {
   background-color: #c19052;
   color: white;
@@ -517,6 +311,8 @@
   color: orange;
   font-size: 1rem;
 }
+
+
 .swiper {
   width: 100%;
   padding: 2rem 0;
@@ -534,6 +330,285 @@
 
 
 
-.firstplace{
+/*footerclasses*/
 
+.footlogo{
+  padding-left: 650px;
+}
+
+
+.bgcolour1{
+  background-color: #e6e3db;
+}
+.emaillabel{
+  justify-content: center;
+  border-radius: 5px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right:100px;
+
+}
+
+.footerimage{
+  width:200px;
+  height:200px;
+  padding-top:10px;
+
+
+}
+
+
+.ip{
+  width:482px;
+  height: 63px;
+  border-radius: 154px;
+}
+
+.icons1{
+  width:30px;
+  height:30px;
+}
+
+
+
+.tittle{
+  font-weight: 600 !important;
+    margin-bottom: 40px !important;
+    width: 90% !important;
+    letter-spacing: -2px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    font-size: 3.438rem;
+    line-height: 3.438rem;
+}
+
+    
+
+
+
+/*man*/
+.alignment{
+  text-align: justify;
+  padding-top:55px;
+    font-weight: 600 !important;
+    letter-spacing: -3px !important;
+    font-size: 4.375rem;
+    
+    line-height: 3.8rem;
+}
+.alignment3{
+  text-align: justify;
+
+    font-weight: 600 !important;
+    letter-spacing: -3px !important;
+    font-size: 4.375rem;
+    
+    line-height: 3.8rem;
+}
+.alignment1{
+  text-align: justify;
+  padding-bottom:10px;
+   margin-bottom: 25px;
+   box-sizing: border-box;
+  
+}
+
+.alignment2{
+  text-align: justify;
+    font-weight: 600 !important;
+    letter-spacing: -3px !important;
+    font-size: 4.375rem;
+    padding-bottom: 1px;
+    line-height: 3.8rem;
+    padding-bottom: 30px;
+  
+}
+
+
+
+
+
+.vertical-text {
+      writing-mode: sideways-lr;
+      color:#b88c47;
+      padding-top: 23px;
+      padding-right: 10px;
+    font-weight: 600 !important;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase !important;
+}
+
+.companybutton{
+  width:100px;
+  color:#ffffff;
+  background-color:rgb(34, 33, 33);
+      width: 175px;
+    height: 60px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+
+.lanchor{
+color:#333;
+padding-right: 134px;
+
+}
+
+.text{
+    font-weight: 600;
+    letter-spacing: -3 !important;
+    color: var(--medium-gray);
+    line-height: 32px;
+    font-size: 17px;
+}
+
+.man{
+    width:100%;
+    height:70%;
+    /*margin-left: 35%;*/
+}
+
+
+
+/*destination*/
+.lovers{
+  font-weight: inherit;
+}
+
+
+
+/*women*/
+.women{
+  padding-top: 10px!important ;
+  font-size: 4.375rem;
+  font-weight: 500 !important;
+  margin-bottom: 40px !important;
+  letter-spacing: -2px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  line-height: 3.8rem;
+  font-size: 4.375rem;
+
+}
+
+.women1{
+     padding-top: 202px;
+    font-weight: 500 !important;
+    margin-bottom: 5px !important;
+    letter-spacing: 1px !important;
+    text-transform: uppercase !important;
+  font-size: 1.5rem;
+   
+}
+
+.box2{
+
+  padding-bottom: 30px;
+  background-image: url('../images/perfect_plain.jpg');
+  width:100%;
+  height: 569.188px;
+  background-size: cover !important;
+  overflow: hidden;
+    
+  
+}
+
+.perfect_plan{
+    width:80%;
+    height: 80%;
+}
+
+
+.back{
+    background-image: url('../images/background.png');
+    width:100%;
+    height:100%;
+}
+
+.maptitle{
+  
+    font-weight: 600 !important;
+    letter-spacing: -2px !important;
+    font-size: 3.438rem;
+    line-height: 3.438rem;
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
+    font-weight: inherit;
+}
+
+.mapsubtitle{
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    text-align: left !important;
+    text-align: center !important;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 30px;
+  }
+  
+
+
+/*icons*/
+.icons{
+  width:50px;
+  height:50px;
+
+}
+
+
+/*travelpic*/
+
+.box{
+    padding-bottom: 30px;
+}
+.box1{
+    top:73%;
+    margin-left:10px ;
+    margin-right:30px ;
+  
+}
+
+.firstbox{
+  
+    background-color:rgb(34, 30, 30);
+    color:white;
+    border-top-right-radius:10px;
+    border-top-left-radius: 10px;
+    padding: 15px;
+    
+    
+}
+
+.secondbox{
+    background-color:white;
+    color:black;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+    padding-top: 6px;
+    padding-left: 14px;
+    width:100%;
+    margin-right:10px ;
+}
+
+.story{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.travelpic{
+
+}
+
+
+.travelpic1{
+  margin-bottom: 30px;
+  font-size: 3.438rem;
+  line-height: 3.438rem;
+  letter-spacing: -2px !important;
+  font-weight: 600 !important;
+  color: var(--dark-gray);
 }
