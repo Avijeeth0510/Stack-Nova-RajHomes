@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="travel">
+    <link rel="icon" href="">
     <title>Travelio</title>
     <link rel="stylesheet" href="assets/css/travelio.css" />
     <link
       href="assets/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
     <script src="assets/javascript/jquery-3.6.0.min.js"></script>
+
 </head>
 <body>
 <div class="contianer">
-<header class="navbar">
-    
+    <header class="navbar" id="nav">
           <div class="logo">
             <img src="assets/images/Traveliologo.jpg" alt="logo" class="logo">
           </div>
-       
-
       
           <nav class="nav-menu menu">
             <ul class="nav-links">
-            
               <li><a href="#" class="active">Home</a></li>
               <li><a href="#">About</a></li>
-              <li><a href="#">Destination</a></li>
+              <li><a href="#destination">Destination</a></li>
               <li><a href="#">Tours</a></li>
               <li><a href="#">Review</a></li>
               <li><a href="#">Blog</a></li>
@@ -39,78 +39,233 @@
             <span class="bar"></span>
             <span class="bar"></span>
           </div>
+    </header>
+</div>
+ 
    
-        </header>
+<section class="travelio-vertical-slider" id="slider">
+    <div class="travelio-slide" style="background-image: url('assets/images/elephant2.jpg');">
     </div>
-   
-      
-
-   <section class="travelio-horizontal-slider">
-  <div class="travelio-slide" style="background-image: url('assets/images/elephant1.webp');"
-">
-    <div class="travelio-slide-content">
-      <h1>Wildlife</h1>
+ 
+    <div class="travelio-slide" style="background-image: url('assets/images/desert.jpg');">
     </div>
-  </div>
-
-  <div class="travelio-slide" style="background-image: url('assets/images/desert.jpg');">
-    <div class="travelio-slide-content">
-      <h2>Conquer Mountains</h2>
-      <p>Reach new heights with every adventure.</p>
+  
+    <div class="travelio-slide" style="background-image: url('assets/images/mountian.jpg');">
     </div>
-  </div>
-
-  <div class="travelio-slide" style="background-image: url('assets/images/mountian.jpg');">
-    <div class="travelio-slide-content">
-      <h2>Relax by the Sea</h2>
-      <p>Unwind and enjoy the sound of the waves.</p>
-    </div>
-  </div>
 </section>
 
-
-
-  <section class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="back">
-          <div class="offset-md-2 col-md-10">
-            <div class="row text">
-         
-              <div class="col-md-5 text-center">
-                <h1>
-                Discover the 
-                </h1>
-                <h1>
-                world's leading
-                </h1>
-                <h1>
-                travel agency
-                </h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+<section class="py-5" id="man">
+  <div class="container">
+    <div class="row">
+      <div class="back">
+        <div class="offset-md-1 col-md-10">
+          <div class="row ">
+            <div class="col-md-1">
+                <div class="vertical-text">
+                    EXPLORE THE WORLD FOR YOURSELF
+                </div>
             </div>
+
+          <div class="col-md-7 text-center">
+              <div class="row"> 
+                <div class="col-md-12">
+                  <h1 class="alignment">
+                  Discover the 
+                  </h1>
+                  <h1 class="alignment3">
+                  world's leading
+                  </h1>
+                  <h1 class="alignment2">
+                  travel agency
+                  </h1>
+                  <p class="alignment1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                </div>
+              
+              <div class="col-md-12">
+                  <div class="row">
+                      <div class="col-md-6">
+                        <button class="companybutton">ABOUT COMPANY</button>
+                      </div>
+                      <div class="col-md-6">
+                        <a href="#" class="lanchor">DISCOVER TOUR</a>
+                      </div>
+                  </div>
+                </div>
+              </div> 
+          </div>
+           
+
             <div class="col-md-4">
-              <div class="text">
+              <div class="text position-absolute">
                   <img src="assets/images/man.jpg" alt="man" class="man">
+              </div>
+
+              <div class="position-relative">
+                <img src="assets/images/manlogo1.png" alt="logo" >
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5" id="icons">
+  <div class=" offset-md-1 col-md-10">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="col-md-12">
+          <div class="row">
+          <div class="col-md-4">
+             <img src="assets/images/medal.png" alt="medal" class="icons">
+          </div>
+          <div class="col-md-8">
+              <h3 style="color:rgb(36, 34, 34);font-size: larger;">Superior Service</h3>
+              <h5 style="color:rgb(71, 69, 69);font-size: medium;">lorem ipsum text</h5>
+          </div>
+          </div>
+        </div>
+       
+      </div>
+
+      <div class="col-md-3">
+        <div class="col-md-12">
+          <div class="row">
+          <div class="col-md-4">
+             <img src="assets/images/world.png" alt="world" class="icons">
+          </div>
+          <div class="col-md-8">
+              <h3 style="color:rgb(36, 34, 34);font-size: larger;">Cheapest packages</h3>
+              <h5 style="color:rgb(71, 69, 69);font-size: medium;">lorem ipsum text</h5>
+          </div>
+          </div>
+        </div>
+      
+      </div>
+
+      <div class="col-md-3">
+        <div class="col-md-12">
+          <div class="row">
+          <div class="col-md-4">
+             <img src="assets/images/tour-guide.png" alt="guide" class="icons">
+          </div>
+          <div class="col-md-8">
+              <h3 style="color:rgb(36, 34, 34);font-size: larger;">Greatest guides</h3>
+              <h5 style="color:rgb(71, 69, 69);font-size: medium;">lorem ipsum text</h5>
+          </div>
+          </div>
+        </div>
+  
+       
+      </div>
+
+      <div class="col-md-3">
+           <div class="col-md-12">
+          <div class="row">
+          <div class="col-md-4">
+             <img src="assets/images/police-badge (1).png" alt="'detective" class="icons">
+          </div>
+          <div class="col-md-8">
+              <h3 style="color:rgb(36, 34, 34);font-size: larger;">Fully protected</h3>
+              <h5 style="color:rgb(71, 69, 69);font-size: medium;">lorem ipsum text</h5>
+          </div>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-<section class="py-5">
-  <div class="container">
-    <div class="row">
-    
-        <h5 style="color:#c19052 " class="text-center">MOST POPULAR TOUR</h5>
-        <h1 class="text-center" style="padding-bottom: 20px;">Popular packages </h1>
-        
-      </div>
-    </div>
+  </div>
+
 </section>
-    <section class="py-5">
+
+
+<section class="travelio-package-slider py-5 bgcolour" id="slider2">
+  <div class="container">
+    <h5 class="text-center" style="color:#c19052;">MOST POPULAR TOUR</h5>
+    <h1 class="text-center mb-4">Popular packages</h1>
+
+    <div class="travelio-swiper swiper">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="travelio-card">
+            <img src="assets/images/cardslider1.jpg" alt="bear">
+            <div class="travelio-card-body">
+              <span class="travelio-badge">08 DAYS</span>
+              <h4>$1099 <small class="strike">$1200</small></h4>
+              <p>Maldives resorts with return flights.</p>
+              <h7>12 REVIEWS</h7>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="travelio-card">
+            <img src="assets/images/cardslider2.jpg" alt="girl">
+            <div class="travelio-card-body">
+              <span class="travelio-badge">05 DAYS</span>
+              <h4>$1349 <small class="strike">$1700</small></h4>
+              <p>Dubai parks resorts special packages.</p>
+              <h7>10 REVIEWS</h7>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="travelio-card">
+            <img src="assets/images/cardslider4.jpg" alt="bottle">
+            <div class="travelio-card-body">
+              <span class="travelio-badge">10 DAYS</span>
+              <h4>$1699 <small class="strike">$1800</small></h4>
+              <p>Maldives resorts with return flights.</p>
+              <h7>16 REVIEWS</h7>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <div class="travelio-card">
+            <img src="assets/images/cardslider3.jpg" alt="legs">
+            <div class="travelio-card-body">
+              <span class="travelio-badge">12 DAYS</span>
+              <h4>$1299 <small class="strike">$1500</small></h4>
+              <p>Maldives resorts with return flights.</p>
+              <h7>18 REVIEWS</h7>
+            </div>
+          </div>
+        </div>
+
+         <div class="swiper-slide">
+          <div class="travelio-card">
+            <img src="assets/images/cardslider4.jpg" alt="girl">
+            <div class="travelio-card-body">
+              <span class="travelio-badge">07 DAYS</span>
+              <h4>$1249 <small class="strike">$1600</small></h4>
+              <p>Dubai parks resorts special packages.</p>
+              <h7>12 REVIEWS</h7>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <!-- Navigation and Pagination -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</section>
+
+
+
+    <section class="py-5" id="Destination">
         <div class="container">
             <div class="row">
             
@@ -168,42 +323,50 @@
     </section>
 
   <section>
-    <h2 class="text-center">World's hottest destinations for mountain lovers</h2>
+    <h2 class="text-center lovers">World's hottest destinations for mountain lovers</h2>
   </section>
         
-  <section class="py-5">
+<section class="py-5" id ="women">
   <div class="col-md-12">
-    <div class="row" style="width: 100%;">
+    <div class="row" style="width: 100%">
       <div class="box2">
-    
-          <h4 style="color:white;" class="text-center" >FINDING THE PERFECT TRIP</h4>
-            <h1 style="color:white;" class="text-center">Get Ready to Explore and discover your world.</h1>
-          </div>
-          </div>
-        </div>
+          <h4 style="color:white;" class="text-center women1" >FINDING THE PERFECT TRIP</h4>
+          <h1 style="color:white;" class=" text-center  women" >Get Ready to Explore and<br>discover your world.</h1>
+      </div>
+    </div>
+  </div>
+
     <div class="col-md-12">
       <div class="plan" >
-        <div class="col-md-12">
+        <div class="row"  style="width: 99%;">
           <div class="col-md-4">
-            
-          <h5 style="color:#c19052 " class="text-center">TESTIMONIALS</h5>
-          <h1 class="text-center" style="padding-bottom: 20px;">Our Happy traveller.</h1>
+            <h1 class="text-center" style="padding-top: 20px;padding-bottom: 150px;" ></h1>
+            <h5 style="color:#c19052;" class="text-center mapsubtitle" style="padding-top: 20px;" >TESTIMONIALS</h5>
+            <h1 class="text-center maptitle" style="padding-top: 8px;">Our happy </h1>
+            <h1 class="text-center maptitle" > traveller.</h1>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-4">
+               <img src="assets/images/mapsection1.jpg" alt="img" class="mapsectionpad">
           </div>
+          <div class="col-md-4">
+            <h1 class="text-center" style="padding-top: 20px;padding-bottom:145px;" ></h1>
+            <h4 class="textcenter" style="padding-right: 9px;">This itinerary was a perfect </h4>
+            <h4 style="padding-right: 9px;">combination of city sights, history</h4>
+            <h4 style="padding-right: 9px;"> and culture together with the peace of the amazon  </h4>
+            <h4 style="padding-right: 9px;">rainforest and the adventure.</h4>
           </div>
         </div>
       </div>
     </div>
-  </section>
+</section>
   
-<section>
-  <section class="py-5">
+
+  <section class="py-5 bgcolour" id="travel pic">
     <div class="container">
         
           
-          <h5 style="color:#c19052 " class="text-center">INSPIRING STORY</h5>
-          <h1 class="text-center" style="padding-bottom: 20px;">Travel Blogs</h1>
+          <h5 style="color:#c19052 " class="text-center travelpic" >INSPIRING STORY</h5>
+          <h1 class="text-center travelpic1" style="padding-bottom: 20px; ">Travel Blogs</h1>
 
     <div class="offset-md-1 col-md-10">
         <div class="row">
@@ -288,10 +451,172 @@
 
 </section>
 
-<section>
+<section class="py-5 bgcolour1" id="footer">
+  <img src="assets/images/footer.jpg" alt="footlogo" class="footlogo">
+  <h1 class="text-center title">Get the amazing travel<br>  offers into your inbox!</h1>
+
+  
+ <div class="offset-md-4 col-md-4">
+  <div>
+      <form class="emaillabel"> 
+    <input class="ip" type="text" id="email" required placeholder="enter your email address"  style="padding-left: 46px;">
+    </form>
+  </div>
+ </div>
+ <p class="fs-16 lh-normal text-center" style="color:grey">We are committed to protecting your <a href="#" class="text-decoration-line-bottom text-dark-gray text-dark-gray-hover" style="color:black">privacy policy.</a></p>
+
+ 
+  <div class="container">
+   <div class=" col-md-12">
+      <div class="row">
+        <div class="col-md-2">
+          <img src="assets/images/footer2.jpg" alt="footer1" class="footerimage">
+        </div>
+
+         <div class="col-md-2">
+          <img src="assets/images/footer3.jpg" alt="footer1" class="footerimage">
+        </div>
+
+         <div class="col-md-2">
+          <img src="assets/images/footer4.jpg" alt="footer1" class="footerimage">
+        </div>
+
+         <div class="col-md-2">
+          <img src="assets/images/footer5.jpg" alt="footer1" class="footerimage">
+        </div>
+
+         <div class="col-md-2">
+          <img src="assets/images/footer6.jpg" alt="footer1" class="footerimage">
+        </div>
+        
+        <div class="col-md-2">
+          <img src="assets/images/footer1.jpg" alt="footer1" class="footerimage">
+        </div>
+      </div>
+    </div>
+   <div class="offset-md-1 col-md-11 py-5">
+    <div class="row">
+     
+        <div class="col-md-4">
+          <div class="row">
+             <p>@copyright2024  <a href="#" class="lanchor">Stacksnova</a></p>
+       
+          </div>
+         
+      </div>
+
+      <div class="col-md-7">
+        
+            <div class="row">
+              <div class="col-md-2">
+                  <a>About</a>
+              </div>
+
+              <div class="col-md-2">
+                   <a> Destination</a>
+              </div>
+
+               <div class="col-md-2">
+                <a> Tours</a>
+              </div>
+
+               <div class="col-md-2">
+                <a> Reviews</a>
+              </div>
+
+               <div class="col-md-2">
+                <a> Blog</a>
+              </div>
+                
+               <div class="col-md-2">
+                <a> contact</a>
+              </div>
+            </div>
+       
+      </div>
+
+      <div class="col-md-1">
+        <div class="row">
+           <div class="col-md-3">
+         
+         <i class="fa fa-facebook"></i> </div>
+
+           <div class="col-md-3">
+            <i class="fa fa-dribbble" aria-hidden="true"></i>
+          </div>
+
+          <div class="col-md-3">
+         <i class="fa fa-twitter" aria-hidden="true"></i>
+          </div>
+
+          <div class="col-md-3">
+           <i class="fa fa-instagram" aria-hidden="true"></i>
+          </div>
+        </div>
+        </div>
+
+ 
+
+  
+       
+     
+  
+
+
+  </div>
+ </div>
+
 
 </section>
         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- SwiperJS CDN and Custom Slider Init (Place below body scripts) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+  const travelioSwiper = new Swiper(".travelio-swiper", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      1024: { slidesPerView: 4 },
+      768: { slidesPerView: 2 },
+      480: { slidesPerView: 1 }
+    }
+  });
+</script>
     
       
         <script src="script.js"></script>
